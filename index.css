@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Africa Trial Cliff", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/photos/comingSoonFinal.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* padding: 0 8%; */
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    left: 30vw;
+
+}
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color:#ff3753;
+
+}
+.launch-time{
+    display: flex;
+    gap: 50px;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+}
+
+/* ************** tablet view ***************/
+
+@media screen and (max-width: 1024px){
+    .container{
+        left: 25vw;
+        
+    }
+    h1{
+        font-size: 6vw;
+    }
+    p{
+        font-size:1.9vw;
+    }
+    .launch-time{
+        gap: 3vw;
+        margin-top: 5vh;
+    }
+    .launch-time span{
+        font-size: 1.6vw;
+    }
+    .launch-time .time{
+        font-size: 9vw;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .launch-time{
+        gap: 0.5vw;
+    }
+
+}
